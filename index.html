@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sundarraj C | Computer Science &amp; Engineering Student</title>
+  <meta name="description"
+    content="Portfolio of Sundarraj C, Computer Science Engineering student specializing in C, Python and Full Stack Development." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">SC<span class="dot">.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===================== ANIMATED BACKGROUND SHAPES ===================== -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Sundarraj<span class="text-gradient">.C</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Project Highlights">Project Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <header id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7" data-aos>
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Sundarraj C</h1>
+          <h2 class="hero-role">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            Hi, I'm Sundarraj, a Computer Science &amp; Engineering graduate with a passion for building modern,
+            responsive, and user-friendly web applications. I specialize in Full Stack Development using HTML,
+            CSS, JavaScript, React, Python, Django, and MySQL. I enjoy solving real-world problems through clean
+            code and continuously improving my skills by building practical projects. I'm currently seeking
+            opportunities to contribute, learn, and grow as a Full Stack Developer.
+          </p>
+          <div class="hero-btns">
+            <a href="assets/SundarrajCResume.pdf" class="btn btn-gradient" id="resumeBtn">
+              <i class="bi bi-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline-glow">
+              <i class="bi bi-send"></i> Hire Me
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raj14032005@gmail.com" target="_blank"
+              rel="noopener noreferrer" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+919092856057" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="https://github.com/sundar14032005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/sundarraj-c17142005" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center" data-aos>
+          <div class="hero-img-wrap">
+            <div class="hero-img-glow"></div>
+
+            <div class="hero-img-placeholder">
+              <img src="assets/photoss.jpeg" alt="Sundarraj C" class="profile-img">
+            </div>
+
+            <div class="floating-badge badge-1">
+              <i class="bi bi-bootstrap-fill"></i> Bootstrap
+            </div>
+
+            <div class="floating-badge badge-2">
+              <i class="bi bi-code-slash"></i> React
+            </div>
+
+            <div class="floating-badge badge-3">
+              <i class="bi bi-terminal-fill"></i> Python
+            </div>
+
+            <div class="floating-badge badge-4">
+              <i class="bi bi-server"></i> Django
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+      <i class="bi bi-mouse"></i>
+    </a>
+  </header>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">About Me</p>
+        <h2>Getting To Know Me</h2>
+      </div>
+
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5" data-aos>
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div class="about-img-border"></div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos>
+          <h3 class="about-title">Computer Science Engineering Student &amp; Full Stack Enthusiast</h3>
+          <p class="about-text">
+            I'm Sundarraj, a Computer Science and Engineering graduate from Mailam Engineering College, affiliated
+            with Anna University. I'm passionate about building modern, responsive, and user-friendly web
+            applications using HTML, CSS, JavaScript, React, Python, Django, and MySQL. I enjoy solving real-world
+            problems through clean, efficient code and continuously improving my skills by developing practical
+            projects and exploring new technologies. My goal is to grow as a Full Stack Developer and contribute
+            to building scalable, impactful software solutions.
+          </p>
+          <div class="row about-info">
+            <div class="col-sm-6">
+              <p><i class="bi bi-mortarboard"></i> <strong>Education:</strong> B.E. CSE, 2022–2026</p>
+              <p><i class="bi bi-geo-alt"></i> <strong>Location:</strong> Velachery, Chennai.</p>
+            </div>
+            <div class="col-sm-6">
+              <p><i class="bi bi-briefcase"></i> <strong>Freelance:</strong> Available</p>
+              <p><i class="bi bi-envelope"></i> <strong>Email:</strong> raj14032005@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="row stats-row gy-4">
+            <div class="col-6 col-md-3">
+              <div class="glass-card stat-card">
+                <h3 class="counter" data-target="2">0</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="glass-card stat-card">
+                <h3 class="counter" data-target="4">0</h3>
+                <p>Certifications</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="glass-card stat-card">
+                <h3 class="counter" data-target="4">0</h3>
+                <p>Years of Study</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="glass-card stat-card">
+                <h3 class="counter" data-target="1">0</h3>
+                <p>Awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="section-padding alt-bg">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">My Skills</p>
+        <h2>Technical Proficiency</h2>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-6" data-aos>
+          <div class="glass-card skill-card">
+            <div class="skill-item">
+              <div class="skill-label"><span>HTML / CSS</span><span class="skill-percent">90%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Bootstrap</span><span class="skill-percent">80%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>JavaScript</span><span class="skill-percent">70%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>React</span><span class="skill-percent">88%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos>
+          <div class="glass-card skill-card">
+            <div class="skill-item">
+              <div class="skill-label"><span>Python</span><span class="skill-percent">80%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Django</span><span class="skill-percent">82%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>MySQL</span><span class="skill-percent">90%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Computer Vision</span><span class="skill-percent">70%</span></div>
+              <div class="progress">
+                <div class="progress-bar" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">What I Do</p>
+        <h2>Services I Offer</h2>
+      </div>
+      <div class="row gy-4">
+
+        <!-- 1. Full Stack Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-window-stack"></i>
+            </div>
+            <h4>Full Stack Development</h4>
+            <p>Building responsive and scalable web applications using React, Django, and MySQL.</p>
+          </div>
+        </div>
+
+        <!-- 2. Frontend Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-code-square"></i>
+            </div>
+            <h4>Frontend Development</h4>
+            <p>Creating modern, responsive, and interactive user interfaces using HTML, CSS, JavaScript, Bootstrap,
+              and React.</p>
+          </div>
+        </div>
+
+        <!-- 3. Backend Development -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-server"></i>
+            </div>
+            <h4>Backend Development</h4>
+            <p>Developing secure server-side applications and REST APIs using Python, Django, and MySQL.</p>
+          </div>
+        </div>
+
+        <!-- 4. Responsive Web Design -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h4>Responsive Web Design</h4>
+            <p>Designing websites that work seamlessly across desktop, tablet, and mobile devices.</p>
+          </div>
+        </div>
+
+        <!-- 5. Database Management -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-database"></i>
+            </div>
+            <h4>Database Management</h4>
+            <p>Designing and managing MySQL databases for secure, efficient, and reliable applications.</p>
+          </div>
+        </div>
+
+        <!-- 6. Performance Optimization -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <h4>Performance Optimization</h4>
+            <p>Improving website speed, performance, and user experience through optimized code and best
+              practices.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="section-padding alt-bg">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">My Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <!-- Project Filter -->
+      <div class="project-filters text-center mb-4" data-aos>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      </div>
+
+      <div class="row gy-4">
+        <!-- Project 1: MEC Notes sharing hub -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="glass-card project-card">
+
+            <div class="project-img">
+
+              <i class="bi bi-journal-richtext"></i>
+
+              <div class="project-overlay">
+
+                <a href="https://mecnotes.42web.io/?i=1" target="_blank" class="overlay-btn">
+                  <i class="bi bi-globe"></i>
+                </a>
+
+                <a href="https://mecnotes.42web.io/?i=1" target="_blank" class="overlay-btn">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="project-body">
+
+              <h4>MEC Notes Sharing Hub</h4>
+
+              <p>
+                A centralized web platform developed for students to access and share
+                academic notes organized by department, semester, and subject,
+                providing a simple and user-friendly learning resource.
+              </p>
+
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="project-actions">
+
+                <a href="https://mecnotes.42web.io/?i=1" target="_blank" class="btn btn-sm btn-outline-glow">
+                  <i class="bi bi-globe"></i> Visit
+                </a>
+
+                <a href="https://mecnotes.42web.io/?i=1" target="_blank" class="btn btn-sm btn-gradient">
+                  <i class="bi bi-box-arrow-up-right"></i> Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2: BMI Calculator -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="javascript" data-aos="fade-up">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <i class="bi bi-heart-pulse-fill"></i>
+              <div class="project-overlay">
+                <a href="https://github.com/sundar14032005/BMI-Calculator" target="_blank" rel="noopener noreferrer"
+                  class="overlay-btn" aria-label="View code on GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://sundar14032005.github.io/BMI-Calculator/" target="_blank" rel="noopener noreferrer"
+                  class="overlay-btn" aria-label="View live demo">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>BMI Calculator</h4>
+              <p>
+                A responsive Body Mass Index calculator that calculates BMI based on height and weight, displays
+                the BMI value, and classifies the user's health status with a clean and interactive interface.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sundar14032005/BMI-Calculator" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-glow">
+                  <i class="bi bi-github"></i> Code
+                </a>
+                <a href="https://sundar14032005.github.io/BMI-Calculator/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-gradient">
+                  <i class="bi bi-box-arrow-up-right"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Electronic Shop Website -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <i class="bi bi-cart4"></i>
+              <div class="project-overlay">
+                <a href="https://github.com/sundar14032005/electronic-shop-website" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View code on GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://sundar14032005.github.io/electronic-shop-website/" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View live demo">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Electronic Shop Website</h4>
+              <p>
+                A responsive e-commerce website for showcasing electronic products with modern layouts, product
+                cards, navigation, and an engaging shopping experience.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sundar14032005/electronic-shop-website" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-outline-glow">
+                  <i class="bi bi-github"></i> Code
+                </a>
+                <a href="https://sundar14032005.github.io/electronic-shop-website/" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-gradient">
+                  <i class="bi bi-box-arrow-up-right"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Responsive Login Page -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <i class="bi bi-person-circle"></i>
+              <div class="project-overlay">
+                <a href="https://github.com/sundar14032005/responsive-login-page" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View code on GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://sundar14032005.github.io/responsive-login-page/" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View live demo">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Responsive Login Page</h4>
+              <p>
+                A modern and fully responsive login interface designed with clean UI, form validation, and
+                mobile-friendly layouts for an enhanced user experience.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sundar14032005/responsive-login-page" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-outline-glow">
+                  <i class="bi bi-github"></i> Code
+                </a>
+                <a href="https://sundar14032005.github.io/responsive-login-page/" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-gradient">
+                  <i class="bi bi-box-arrow-up-right"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: E-Commerce Management System -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="database" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <i class="bi bi-database-fill"></i>
+              <div class="project-overlay">
+                <a href="https://github.com/sundar14032005/ecommerce-management-system-sql" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View code on GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://github.com/sundar14032005/ecommerce-management-system-sql" target="_blank"
+                  rel="noopener noreferrer" class="overlay-btn" aria-label="View project">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>E-Commerce Management System</h4>
+              <p>
+                A comprehensive SQL-based database management system for an e-commerce platform featuring
+                customer, product, order, inventory, and payment management using relational database concepts
+                and SQL queries.
+              </p>
+              <div class="tech-tags">
+                <span>MySQL</span>
+                <span>SQL</span>
+                <span>Database</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sundar14032005/ecommerce-management-system-sql" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-outline-glow">
+                  <i class="bi bi-github"></i> Code
+                </a>
+                <a href="https://github.com/sundar14032005/ecommerce-management-system-sql" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-gradient">
+                  <i class="bi bi-box-arrow-up-right"></i> View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Personal Portfolio Website -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web" data-aos="fade-up">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <i class="bi bi-layout-text-sidebar-reverse"></i>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4>Personal Portfolio Website</h4>
+              <p>A responsive, animated personal portfolio built with Bootstrap 5 and vanilla JavaScript.</p>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm btn-outline-glow"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="btn btn-sm btn-gradient"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE TIMELINE ===================== -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">My Journey</p>
+        <h2>Education &amp; Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2022 – 2026</span>
+            <h4>B.E. Computer Science &amp; Engineering</h4>
+            <p class="timeline-company">Mailam Engineering College, Villupuram</p>
+            <p>Pursuing core CS engineering coursework with a focus on programming, full-stack development, and
+              IoT applications. Current aggregate: 83.3%.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2024</span>
+            <h4>DotNet Full Stack Development Certification</h4>
+            <p class="timeline-company">Wipro</p>
+            <p>Completed certification covering full stack development using .NET technologies, building
+              hands-on application skills.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2023</span>
+            <h4>Workshops: Computer Vision &amp; Frontend Technology</h4>
+            <p class="timeline-company">Value Added Courses</p>
+            <p>Completed 6-day intensive trainings in image processing/vision-based applications and HTML, CSS,
+              JavaScript, responsive design.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2022</span>
+            <h4>HSC (Bio Maths)</h4>
+            <p class="timeline-company">Kuyilappalayam Higher Secondary School</p>
+            <p>Completed higher secondary education with 82.6%, building a strong foundation for engineering
+              studies.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2020</span>
+            <h4>SSLC</h4>
+            <p class="timeline-company">Poncos Higher Secondary School</p>
+            <p>Completed secondary schooling with 71.4%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Project Highlights ===================== -->
+  <section id="Project Highlights" class="section-padding alt-bg">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">Feedback</p>
+        <h2>What People Say</h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="glass-card testimonial-card mx-auto">
+              <div class="testimonial-img">
+                <i class="bi bi-person-circle"></i>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>"The BMI Calculator is simple, responsive, and easy to use. It provides instant and accurate BMI
+                results with a clean user interface."</p>
+
+              <h5>College Faculty</h5>
+              <span>Project Review</span>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="glass-card testimonial-card mx-auto">
+              <div class="testimonial-img"><i class="bi bi-person-circle"></i></div>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>"The Notes Sharing Hub he built genuinely helped our classmates organize and access study
+                material faster."</p>
+              <h5>Classmate</h5>
+              <span>CSE Department</span>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="glass-card testimonial-card mx-auto">
+              <div class="testimonial-img">
+                <i class="bi bi-person-circle"></i>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>"The Electronic Shop website features an attractive interface, responsive product layouts, and
+                intuitive navigation that delivers a smooth browsing experience."</p>
+
+              <h5>Project Evaluator</h5>
+              <span>Frontend Development</span>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="glass-card testimonial-card mx-auto">
+              <div class="testimonial-img">
+                <i class="bi bi-person-circle"></i>
+              </div>
+
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>"The SQL project showcases a well-structured relational database with practical implementation of
+                tables, relationships, queries, and database management concepts."</p>
+
+              <h5>Database Reviewer</h5>
+              <span>SQL Project</span>
+
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-nav-icon"><i class="bi bi-chevron-left"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-nav-icon"><i class="bi bi-chevron-right"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-heading" data-aos>
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="row gy-5">
+        <div class="col-lg-5" data-aos>
+          <div class="glass-card contact-info-card">
+            <div class="contact-info-item">
+              <i class="bi bi-telephone-fill"></i>
+              <div>
+                <h6>Phone</h6>
+                <p>+91 90928 56057</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div>
+                <h6>Email</h6>
+                <p>raj14032005@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <h6>Address</h6>
+                <p>Velachery, Chennai.</p>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raj14032005@gmail.com" target="_blank"
+                rel="noopener noreferrer" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+              <a href="tel:+919092856057" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+              <a href="https://github.com/sundar14032005" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/sundarraj-c17142005" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos>
+          <form id="contactForm" class="glass-card contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                <div class="invalid-feedback">Please enter a subject.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message..."
+                  required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-gradient w-100">
+                  <i class="bi bi-send"></i> Send Message
+                </button>
+              </div>
+              <div class="col-12">
+                <div id="formSuccess" class="form-success d-none">
+                  <i class="bi bi-check-circle-fill"></i> Your message has been sent successfully!
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-4">
+          <h4 class="footer-logo">Sundarraj<span class="text-gradient">.C</span></h4>
+          <p>Computer Science Engineering student building practical, real-world software solutions.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Connect</h6>
+          <div class="footer-socials">
+            <a href="https://github.com/sundar14032005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/sundarraj-c17142005" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raj14032005@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="footer-copy">&copy; <span id="year"></span> Sundarraj C. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
